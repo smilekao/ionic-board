@@ -7,6 +7,28 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  post: {
+    userName: string,
+    message: string,
+    createData: any
+  } = {
+      userName: 'Taro Yamada',
+      message: 'これはテストメッセージです123',
+      createdDate: '10分前'
+    };
 
-}
+  posts: { userName: string, message: string, createData: any }[]
+    = [
+      {
+        userName: 'Taro Yamada',
+        message: 'これはテストメッセージです123',
+        createdDate: '10分前'
+      },
+
+      {
+        userName: 'Jiro Suzuki',
+        message: 'ふたつめのテストメッセージです',
+        createdDate: '5分前'
+      }
+    ];
+  }
