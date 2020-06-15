@@ -10,14 +10,14 @@ export class HomePage {
   post: {
     userName: string,
     message: string,
-    createData: any
+    createdData: any
   } = {
       userName: 'Taro Yamada',
       message: 'これはテストメッセージです123',
       createdDate: '10分前'
     };
 
-  posts: { userName: string, message: string, createData: any }[]
+  posts: { userName: string, message: string, createdData: any }[]
     = [
       {
         userName: 'Taro Yamada',
